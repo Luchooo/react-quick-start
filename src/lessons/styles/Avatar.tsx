@@ -4,7 +4,7 @@ type UserT = {
 };
 
 const user: UserT = {
-  image: "https://i.imgur.com/pGW5Paub.jpg",
+  image: "/img/avatar.webp",
   name: "Avatar cat",
 };
 
@@ -16,7 +16,7 @@ export const Avatar = () => {
       </h1>
       <img
         className="mt-2 rounded-full w-24 h-24 transition-all duration-700 opacity-50 hover:opacity-100 cursor-pointer"
-        src={"./src/assets/avatar.jpg"}
+        src={user.image}
         alt={user.name}
       />
       <p className="text-xs font-semibold text-blue-950 ">
