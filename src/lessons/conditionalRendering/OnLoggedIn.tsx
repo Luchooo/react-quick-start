@@ -29,7 +29,7 @@ const Login = () => {
           disabled
           className="border border-gray-500/40 rounded-md text-xs"
           type="text"
-          name="username"
+          id="username"
           value={"luis@mail.com"}
         />
         <label htmlFor="password" className="text-xs font-medium">
@@ -39,7 +39,7 @@ const Login = () => {
           disabled
           className="border border-gray-500/40 rounded-md"
           type="password"
-          name="password"
+          id="password"
           value={"12345678"}
         />
       </div>
@@ -56,9 +56,9 @@ export const OnLoggedIn = () => {
         Conditional rendering
       </h1>
       <div className="my-4 flex items-center p-4 border border-gray-500/40 rounded-xl">
-        <label htmlFor="cheese">Is logging user?</label>
+        <label htmlFor="login-checkbox">Is logging user?</label>
         <input
-          name="cheese"
+          id="login-checkbox"
           type="checkbox"
           checked={isLoggedIn}
           onChange={() => setIsLoggedIn(!isLoggedIn)}
