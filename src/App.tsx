@@ -2,6 +2,7 @@ import { Button } from "./lessons/nested/Button";
 import { Avatar } from "./lessons/styles/Avatar";
 import { About } from "./lessons/wrap/About";
 import { OnLoggedIn } from "./lessons/conditionalRendering/OnLoggedIn";
+import { Products } from "./lessons/renderingLists/Products";
 export const App = () => {
   return (
     <div className="flex flex-col items-center">
@@ -19,6 +20,9 @@ export const App = () => {
 
       {/* Conditional rendering ⬇️ */}
       <OnLoggedIn />
+
+      {/* Rendering lists ⬇️ */}
+      <Products />
     </div>
   );
 };
