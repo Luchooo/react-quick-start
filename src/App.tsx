@@ -3,26 +3,32 @@ import { Avatar } from "./lessons/styles/Avatar";
 import { About } from "./lessons/wrap/About";
 import { OnLoggedIn } from "./lessons/conditionalRendering/OnLoggedIn";
 import { Products } from "./lessons/renderingLists/Products";
+import { Alert } from "./lessons/respondingEvents/Alert";
 export const App = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="bg-pink-200 w-full h-10 flex items-center justify-center">
-        ¡Welcome to my app!
-      </h1>
-      {/* Nested component ⬇️ */}
-      <Button />
+    <main className="bg-gray-800">
+      <div className="flex flex-col items-center mx-4">
+        <h1 className="bg-pink-200 w-screen h-10 flex items-center justify-center">
+          ¡Welcome to my app!
+        </h1>
+        {/* Nested component ⬇️ */}
+        <Button />
 
-      {/* Wrap components ⬇️ */}
-      <About />
+        {/* Wrap components ⬇️ */}
+        <About />
 
-      {/* Adding styles ⬇️ */}
-      <Avatar />
+        {/* Adding styles ⬇️ */}
+        <Avatar />
 
-      {/* Conditional rendering ⬇️ */}
-      <OnLoggedIn />
+        {/* Conditional rendering ⬇️ */}
+        <OnLoggedIn />
 
-      {/* Rendering lists ⬇️ */}
-      <Products />
-    </div>
+        {/* Rendering lists ⬇️ */}
+        <Products />
+
+        {/* Responding to events */}
+        <Alert />
+      </div>
+    </main>
   );
 };

@@ -14,6 +14,9 @@ Click to see [web page](https://react-quick-start.vercel.app/).
 - How to add markup and styles ✅
 - How to display data ✅
 - How to render conditions and lists ✅
+- How to respond to events ✅
+- How to respond to update the screen
+- How to share data between components
 
 ## Libraries
 
