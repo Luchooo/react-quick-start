@@ -10,10 +10,10 @@ import { FetchData } from "./lessons/usingHooks/FetchData";
 export const App = () => {
   return (
     <main className="bg-gray-800">
-      <div className="flex flex-col items-center mx-4">
-        <h1 className="bg-pink-200 w-screen h-10 flex items-center justify-center">
-          ¡Welcome to my app!
-        </h1>
+      <h1 className="bg-pink-200 w-full h-10 flex items-center justify-center mb-10">
+        ¡Welcome to my app!
+      </h1>
+      <div className="flex flex-col items-center mx-4 gap-10">
         {/* Nested component ⬇️ */}
         <Button />
 
@@ -37,6 +37,8 @@ export const App = () => {
 
         {/* Using hooks - useEffect */}
         <FetchData />
+
+        <div className="mb-10"></div>
       </div>
     </main>
   );

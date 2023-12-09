@@ -10,7 +10,7 @@ const user: UserT = {
 
 export const Avatar = () => {
   return (
-    <div className="my-8 bg-blue-200 max-w-lg w-screen flex flex-col items-center p-8 rounded-3xl">
+    <div className="bg-blue-200 max-w-lg w-full flex flex-col items-center p-8 rounded-3xl">
       <h1 className="font-semibold underline decoration-red-400">
         Adding styles
       </h1>

@@ -4,7 +4,7 @@ export const Alert = () => {
   };
 
   return (
-    <div className="my-8 bg-emerald-200 max-w-lg w-screen flex flex-col items-center p-8 rounded-3xl">
+    <div className="bg-emerald-200 max-w-lg w-full flex flex-col items-center p-8 rounded-3xl">
       <h1 className="capitalize font-semibold underline decoration-amber-400">
         Responding to events
       </h1>

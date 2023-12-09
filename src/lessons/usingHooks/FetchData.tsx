@@ -49,7 +49,7 @@ export const FetchData = () => {
   }, []);
 
   return (
-    <div className="my-8 bg-orange-200 max-w-lg w-screen flex flex-col items-center p-8 rounded-3xl">
+    <div className="bg-orange-200 max-w-lg w-full flex flex-col items-center p-8 rounded-3xl">
       <h1 className="mb-4 capitalize font-semibold underline decoration-zinc-400">
         Using Hooks - useEffect
       </h1>
