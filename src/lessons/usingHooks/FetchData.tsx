@@ -37,17 +37,15 @@ export const FetchData = () => {
   const [isErrorProducts, setIsErrorProducts] = useState(false);
 
   useEffect(() => {
-    return () => {
-      const fetchData = async () => {
-        const productsResponse = await getProducts({ limit: 5 });
-        if (productsResponse.code === "error") {
-          setIsErrorProducts(true);
-        } else {
-          setProducts(productsResponse.data);
-        }
-      };
-      fetchData();
+    const fetchData = async () => {
+      const productsResponse = await getProducts({ limit: 5 });
+      if (productsResponse.code === "error") {
+        setIsErrorProducts(true);
+      } else {
+        setProducts(productsResponse.data);
+      }
     };
+    fetchData();
   }, []);
 
   return (
