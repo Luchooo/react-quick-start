@@ -51,7 +51,7 @@ export const OnLoggedIn = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <div className="my-8 bg-lime-200 max-w-lg w-screen flex flex-col items-center p-8 rounded-3xl">
+    <div className="bg-lime-200 max-w-lg w-full flex flex-col items-center p-8 rounded-3xl">
       <h1 className="capitalize font-semibold underline decoration-pink-400">
         Conditional rendering
       </h1>

@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="my-8 bg-red-200 max-w-lg w-screen flex flex-col items-center p-8 rounded-3xl">
+    <div className="bg-red-200 max-w-lg w-full flex flex-col items-center p-8 rounded-3xl">
       <h1 className="my-4 font-semibold underline decoration-blue-400">
         Wrap into a shared parent as <code>{"<div>...</div>"}</code>
       </h1>
