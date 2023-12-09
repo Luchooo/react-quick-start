@@ -5,6 +5,7 @@ import { OnLoggedIn } from "./lessons/conditionalRendering/OnLoggedIn";
 import { Products } from "./lessons/renderingLists/Products";
 import { Alert } from "./lessons/respondingEvents/Alert";
 import { Counter } from "./lessons/updatingScreen/Counter";
+import { FetchData } from "./lessons/usingHooks/FetchData";
 
 export const App = () => {
   return (
@@ -33,6 +34,9 @@ export const App = () => {
 
         {/* Updating the screen */}
         <Counter />
+
+        {/* Using hooks - useEffect */}
+        <FetchData />
       </div>
     </main>
   );
