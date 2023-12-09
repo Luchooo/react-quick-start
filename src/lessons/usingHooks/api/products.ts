@@ -1,5 +1,5 @@
-import { ProductT } from "../FetchData";
-import { requestHandler } from "../requestHandler";
+import { ProductT } from "../types/productsTypes";
+import { requestHandler } from "../utils/requestHandler";
 
 type GetProductsParams = {
   limit?: number;
