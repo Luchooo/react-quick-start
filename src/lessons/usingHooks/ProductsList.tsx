@@ -1,15 +1,5 @@
-import { useEffect, useState } from "react";
-import { getProducts } from "./api/products";
-
-export type ProductT = {
-  id: number;
-  title: string;
-  image: string;
-};
-
-type ProductPropsT = {
-  product: ProductT;
-};
+import { ProductPropsT } from "./types/productsTypes";
+import { useProductsData } from "./hooks/useProductsData";
 
 const Product = ({ product }: ProductPropsT) => {
   const { title, image } = product;
@@ -32,21 +22,8 @@ const Product = ({ product }: ProductPropsT) => {
   );
 };
 
-export const FetchData = () => {
-  const [products, setProducts] = useState<ProductT[]>([]);
-  const [isErrorProducts, setIsErrorProducts] = useState(false);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const productsResponse = await getProducts({ limit: 5 });
-      if (productsResponse.code === "error") {
-        setIsErrorProducts(true);
-      } else {
-        setProducts(productsResponse.data);
-      }
-    };
-    fetchData();
-  }, []);
+export const ProductsList = () => {
+  const { error, loading, products } = useProductsData();
 
   return (
     <div className="bg-orange-200 max-w-lg w-full flex flex-col items-center p-8 rounded-3xl">
@@ -54,13 +31,13 @@ export const FetchData = () => {
         Using Hooks - useEffect
       </h1>
       <div className="overflow-x-auto gap-4 flex flex-row w-9/12">
-        {isErrorProducts ? (
-          <div>Error getting products</div>
-        ) : (
+        {loading && <p className="text-center">Loading...</p>}
+        {error && <p>Error getting products...</p>}
+        {!loading &&
+          !error &&
           products.map((product) => (
             <Product key={product.title} product={product} />
-          ))
-        )}
+          ))}
       </div>
     </div>
   );
