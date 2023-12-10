@@ -6,6 +6,7 @@ import { Products } from "./lessons/renderingLists/Products";
 import { Alert } from "./lessons/respondingEvents/Alert";
 import { Counter } from "./lessons/updatingScreen/Counter";
 import { ProductsList } from "./lessons/usingHooks/ProductsList";
+import { SharedState } from "./lessons/sharingData/SharedState";
 
 export const App = () => {
   return (
@@ -29,14 +30,17 @@ export const App = () => {
         {/* Rendering lists ⬇️ */}
         <Products />
 
-        {/* Responding to events */}
+        {/* Responding to events ⬇️ */}
         <Alert />
 
-        {/* Updating the screen */}
+        {/* Updating the screen ⬇️ */}
         <Counter />
 
-        {/* Using hooks - useEffect */}
+        {/* Using hooks - useEffect ⬇️ */}
         <ProductsList />
+
+        {/* Sharing data between components ⬇️ */}
+        <SharedState />
 
         <div className="mb-10"></div>
       </div>

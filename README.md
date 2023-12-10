@@ -16,7 +16,8 @@ Click to see [web page](https://react-quick-start.vercel.app/).
 - How to render conditions and lists ✅
 - How to respond to events ✅
 - How to respond to update the screen ✅
-- How to share data between components
+- How to use to useEffect hook ✅
+- How to share data between components ✅
 
 ## Libraries
 
